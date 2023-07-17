@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <section class="hero">
+        <img src="../img/logo.png" alt="logotype">
+        <h1 class="brand-title">MUSIC EVENTS</h1>
+      </section>
+      <nav class="navbar">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr>
+    <main>
+    <!--Create own form-->
+<form>
+      <h2>Contact Us</h2>
+      <br>
+      <div class="form-group">
+        <label for="nombre">Name:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+<div class="form-group">
+  <label for="phone">Phone:</label>
+  <input type="text" id="phone" name="phone" required pattern="[0-9]+" title="Please enter only numbers">
+</div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Message:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+    </main>
+    <footer>
+      <p>Maria Florencia Jorrat &copy;2023</p>
+    </footer>
+  </body>
+</html>
